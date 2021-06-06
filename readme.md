@@ -1,6 +1,7 @@
 # SVG as ReactComponent in Next:
 
 1 - install the right extension: `yarn add babel-plugin-inline-react-svg -D`
+
 2 - create a `.babelrc` file in root dir and paste:
 
 ```
