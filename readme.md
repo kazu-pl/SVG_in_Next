@@ -13,9 +13,10 @@ module.exports = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      issuer: {
-        test: /\.(js|ts)x?$/,
-      },
+      //// in early 2021 issuer object worked fine but since 11 dec 2021 it throws an error. You can disable this option and it still works fine.
+      // issuer: {
+      //  test: /\.(js|ts)x?$/,
+      // },
       use: ["@svgr/webpack", "url-loader"],
     });
 
